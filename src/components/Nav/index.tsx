@@ -6,16 +6,18 @@ export const NavBar = () => {
   return (
     <C.Container>
       <C.Logo></C.Logo>
-      {NavData.map((item, index) => {
-        return (
-          <C.Menu key={index}>
-            <C.MenuItems to={item.path}>
-              {item.icon}
-              <C.Links>{item.title}</C.Links>
-            </C.MenuItems>
-          </C.Menu>
-        )
-      })}
+      <C.LinksContainer>
+        {NavData.map((item, index) => {
+          return (
+            <C.Menu key={index}>
+              <C.MenuItems to={item.path}>
+                {item.icon}
+                <C.Links>{item.title}</C.Links>
+              </C.MenuItems>
+            </C.Menu>
+          )
+        })}
+      </C.LinksContainer>
     </C.Container>
   );
 }
