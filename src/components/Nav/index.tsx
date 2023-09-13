@@ -5,7 +5,7 @@ import {NavData} from '../../data/navData';
 export const NavBar = () => {
   return (
     <C.Container>
-      <C.Logo></C.Logo>
+      <C.Logo />
       <C.LinksContainer>
         {NavData.map((item, index) => {
           return (
