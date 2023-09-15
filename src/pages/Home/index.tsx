@@ -4,17 +4,20 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs'
 const Home = () => {
   return (  
     <C.Container>
-      <h1>👋 Hello, there!</h1>
-      <h2>I'm Jose Henrique and welcome to my Github profile!</h2>
-      <li>👨‍💻 I'm currently focusing on Backend Development and Data Science;</li>
-      <li>🌱 I'm currently studing Oriented Object Programming, Data Structure and Database;</li>
-      <li>💼 Available for work.</li>
-      <C.Contacts>
-        <BsGithub />
-        <BsLinkedin />
-        Email: <C.Button>Contato</C.Button>
-      </C.Contacts>
+      <C.Main>
+        <C.Text> Olá! Meu nome é </C.Text>
+        <C.Title> José Henrique. </C.Title>
+        <C.Subtitle> 
+          Sou Desenvolvedor Full Stack e construo coisas para a Web. 
+        </C.Subtitle>
+        <C.Contacts>
+          <C.SocialMedia href="https://github.com/josehenriquepg" target="_blank"> <BsGithub /> </C.SocialMedia>
+          <C.SocialMedia href="https://www.linkedin.com/in/josehenriquepg/" target="_blank"> <BsLinkedin /> </C.SocialMedia> 
+          <C.Button>Contato</C.Button>
+        </C.Contacts>
+      </C.Main>
       
+      <C.Aside>...</C.Aside>
     </C.Container>
   );
 }
