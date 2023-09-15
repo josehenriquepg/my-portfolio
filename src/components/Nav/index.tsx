@@ -1,23 +1,35 @@
 import * as C from './styles';
 
-import {NavData} from '../../data/navData';
+import * as data from '../../data/links.json';
+const linksString = JSON.stringify(data);
+const links = JSON.parse(linksString).links;
 
-export const NavBar = () => {
+type Link = {
+    title: string;
+    path: string;
+};
+
+const Links: React.FC<{ links: Link[] }> = ({ links }) => {
+  return (
+    <C.LinksContainer>
+      {links.map((link: Link) => {
+        return (
+          <C.Menu key={link.path}>
+            <C.MenuItems to={link.path}>
+              <C.Links>{link.title}</C.Links>
+            </C.MenuItems>
+          </C.Menu>
+        )
+      })}
+    </C.LinksContainer>
+  )
+};
+
+export const Nav = () => {
   return (
     <C.Container>
       <C.Logo />
-      <C.LinksContainer>
-        {NavData.map((item, index) => {
-          return (
-            <C.Menu key={index}>
-              <C.MenuItems to={item.path}>
-                {item.icon}
-                <C.Links>{item.title}</C.Links>
-              </C.MenuItems>
-            </C.Menu>
-          )
-        })}
-      </C.LinksContainer>
+      <Links links={links} />
     </C.Container>
   );
 }

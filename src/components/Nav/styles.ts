@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logoImage from "../../img/logo.png";
 
 export const Container = styled.nav`
   padding: 16px;

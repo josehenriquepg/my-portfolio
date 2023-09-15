@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "title": "Início",
+      "path": "/"
+    },
+    {
+      "title": "Sobre Mim",
+      "path": "/about"
+    },
+    {
+      "title": "Meus Projetos",
+      "path": "/projects"
+    }
+  ]
+}
