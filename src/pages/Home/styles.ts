@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  background-color: #212123;
   color: #f2f0e5;
 `;
 
@@ -32,6 +31,7 @@ export const SocialMedia = styled.a`
   font-size: 32px;
   text-decoration: none;
   color: #f2f0e5;
+  filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.35));
 
   &:hover {
     color: #f87b1b;
@@ -43,9 +43,10 @@ export const Button = styled.button`
   height: 36px;
   font-size: 16px;
   font-weight: bold;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 20px;
   background-color: #f2f0e5;
+  box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.35);
 
   &:hover {
     background-color: #f87b1b;
