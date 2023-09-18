@@ -6,28 +6,43 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.main`
-  padding: 100px;
-  width: 60%;
+  padding: 150px;
+  width: 60%;  
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Title = styled.h1`
+  padding: 0;
+  margin: 0;
+  font-size: 72px;
   text-align: left;
+  color: #f87b1b;
+  filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.35));
 `;
 
 export const Subtitle = styled.h2`
+  padding: 0;
+  margin: 0;
+  width: 50%;
   text-align: left;
 `;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+  padding: 0;
+  margin: 0;
+`;
 
 export const Contacts = styled.div`
-  width: 60%;
+  margin-top: 50px;
+  width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 `;
 
 export const SocialMedia = styled.a`
+  margin: 5px 0;
   font-size: 32px;
   text-decoration: none;
   color: #f2f0e5;
@@ -41,6 +56,9 @@ export const SocialMedia = styled.a`
 export const Button = styled.button`
   width: 124px;
   height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   font-weight: bold;
   border: none;
