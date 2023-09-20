@@ -2,19 +2,18 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  color: #f2f0e5;
+  color: #fffefd;
 `;
 
 export const Main = styled.main`
-  padding: 150px;
-  width: 60%;  
+  margin: 125px;
+  max-width: 612px;  
   display: flex;
   flex-direction: column;
   border: 1px solid #fff;
 `;
 
 export const Title = styled.h1`
-  padding: 0;
   margin: 0;
   font-size: 72px;
   text-align: left;
@@ -23,15 +22,13 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h2`
-  padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: start;
 `;
 
 export const Text = styled.p`
-  padding: 0;
   margin: 0;
-  width: 70%;
+  text-align: justify;
 `;
 
 export const Aside = styled.aside`
@@ -39,7 +36,6 @@ export const Aside = styled.aside`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #fff;
 `;
 
 export const Icons = styled.div`
