@@ -6,7 +6,7 @@ const Card = ({body, title, badge, image}: CardInterface) => {
   return (
     <Article>
       { badge && 
-        <Badge text={badge.text} filled={badge.filled} />
+        <Badge text={badge.text}/>
       }
       { image &&
         <ProjectImage src={image} alt="Imagem do Projeto" />
