@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  margin: 15px;
+`;
+
 export const Article = styled.article`
   padding: 16px;
-  flex: 1 1 300px;
-  max-width: 356px;
-  position: relative;
   border-radius: 16px;
   box-shadow: 4px 4px 2px rgba(0,0,0,0.35);
   border: 1px solid #fff;

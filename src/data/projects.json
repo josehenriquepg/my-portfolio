@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "image": "",
+      "title": "Gestor de finanças pessoais",
+      "body": "Criação do frontend de um gestor financeiro feito em React.js, Typescript e Styled components. O projeto tem o intuito de ajudar o usuario com suas finanças pessoais, dessa forma tendo um melhor controle do seu de suas finanças sabendo quanto entra e quanto sai em determinado mês."
+    },
+    {
+      "image": "",
+      "title": "Gestor de finanças pessoais",
+      "body": "Criação do frontend de um gestor financeiro feito em React.js, Typescript e Styled components. O projeto tem o intuito de ajudar o usuario com suas finanças pessoais, dessa forma tendo um melhor controle do seu de suas finanças sabendo quanto entra e quanto sai em determinado mês."
+    },
+    {
+      "image": "",
+      "title": "Gestor de finanças pessoais",
+      "body": "Criação do frontend de um gestor financeiro feito em React.js, Typescript e Styled components. O projeto tem o intuito de ajudar o usuario com suas finanças pessoais, dessa forma tendo um melhor controle do seu de suas finanças sabendo quanto entra e quanto sai em determinado mês."
+    }
+  ]
+}

@@ -1,22 +1,32 @@
-import { CardInterface } from '../../types/CardInterface';
-import Badge from '../Badge';
-import { Article, ProjectImage, Description, ProjectTitle, ProjectText } from './styles';
+import { Container, Article, ProjectImage, Description, ProjectTitle, ProjectText } from './styles';
 
-const Card = ({body, title, badge, image}: CardInterface) => {
+type CardInterface = {
+  image: string,
+  title: string,
+  body: string
+}
+
+type ProjectProps = {
+  projects: CardInterface[];
+}
+
+const Card: React.FC<ProjectProps> = ({ projects }) => {
   return (
-    <Article>
-      { badge && 
-        <Badge text={badge.text}/>
-      }
-      { image &&
-        <ProjectImage src={image} alt="Imagem do Projeto" />
-      }
-      <Description>
-        <ProjectTitle>{title}</ProjectTitle>
-        <ProjectText>{body}</ProjectText>
-      </Description>
-    </Article>
-  );
+    <Container>
+      {projects.map((project: CardInterface) => {
+        return (
+          <Article>
+            <ProjectImage src={project.image} />
+            <Description>
+              <ProjectTitle>{project.title}</ProjectTitle>
+              <ProjectText>{project.body}</ProjectText>
+            </Description>
+          </Article>
+        )
+      })}
+    </Container>
+  )
 }
 
 export default Card;
+
