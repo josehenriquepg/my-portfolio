@@ -5,23 +5,19 @@ export const Container = styled.nav`
   padding: 16px;
   display: flex;
   align-itens: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #212123;
   box-shadow: 0 14px 10px -10px rgba(0,0,0,0.35);
 `;
 
 export const Logo = styled.div`
   display: block;
-  background: no-repeat center/125% url();
   float: right;
-`;
-export const LinksContainer = styled.div`
 `;
 
 export const Menu = styled.li`
   margin: 0 5px;
   list-style: none;
-  float: left;
 `;
 
 export const MenuItems = styled(Link)`
@@ -36,6 +32,6 @@ export const MenuItems = styled(Link)`
   }
 `;
 
-export const Links = styled.span`
+export const MenuLinks = styled.span`
   padding: 0 5px;
 `;
