@@ -1,5 +1,5 @@
 import { Container, Main, Title, CardsContainer } from './styles';
-import Card from '../../components/Card';
+import Card from '../Card';
 
 import * as data from '../../data/projects.json';
 const projectsString = JSON.stringify(data);

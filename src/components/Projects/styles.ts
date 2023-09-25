@@ -1,13 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: flex;
+  align-itens: center;
   color: #fffefd;
-`;
-
-export const Main = styled.main`
-  display: grid;
-  place-items: center;
-  width: 100%;
 `;
 
 export const Title = styled.h1`
@@ -20,7 +16,12 @@ export const Title = styled.h1`
   filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.35));
 `;
 
-export const CardsContainer = styled.div`
+export const Main = styled.main`
+  display: grid;
+  place-items: center;
+`;
+
+export const CardsContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

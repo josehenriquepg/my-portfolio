@@ -1,4 +1,4 @@
-import { Container, Logo, Menu, MenuItems, MenuLinks} from './styles';
+import { Container, Menu, MenuItems, MenuLinks} from './styles';
 
 import * as data from '../../data/links.json';
 const linksString = JSON.stringify(data);
@@ -29,10 +29,9 @@ const Links: React.FC<LinksProps> = ({ links }) => {
   )
 };
 
-export const Nav = () => {
+export const Header = () => {
   return (
     <Container>
-      <Logo />
       <Links links={links} />
     </Container>
   );

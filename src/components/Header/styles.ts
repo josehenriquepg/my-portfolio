@@ -5,14 +5,10 @@ export const Container = styled.nav`
   padding: 16px;
   display: flex;
   align-itens: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 32px;
   background-color: #212123;
   box-shadow: 0 14px 10px -10px rgba(0,0,0,0.35);
-`;
-
-export const Logo = styled.div`
-  display: block;
-  float: right;
 `;
 
 export const Menu = styled.li`

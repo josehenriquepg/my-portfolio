@@ -16,7 +16,7 @@ const Card: React.FC<ProjectProps> = ({ projects }) => {
       {projects.map((project: CardInterface) => {
         return (
           <Article>
-            <ProjectImage src={project.image} />
+            { project.image && <ProjectImage src={project.image} />}
             <Description>
               <ProjectTitle>{project.title}</ProjectTitle>
               <ProjectText>{project.body}</ProjectText>

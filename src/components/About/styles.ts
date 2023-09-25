@@ -54,3 +54,41 @@ export const Icon = styled.li`
     color: #f87b1b;
   }
 `;
+
+export const Contacts = styled.div`
+  margin-top: 25px;
+  max-width: 459px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
+export const SocialMedia = styled.a`
+  font-size: 32px;
+  text-decoration: none;
+  color: #fffefd;
+  filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.35));
+
+  &:hover {
+    color: #f87b1b;
+  }
+`;
+
+export const Button = styled.button`
+  width: 124px;
+  height: 32px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  background-color: #fffefd;
+  box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.35);
+
+  &:hover {
+    background-color: #f87b1b;
+  }
+`;
