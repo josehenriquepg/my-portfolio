@@ -1,38 +1,15 @@
-import { Container, Menu, MenuItems, MenuLinks} from './styles';
+import { Logo, Nav, Button } from "./styles";
+import { BsCodeSlash, BsDownload } from "react-icons/bs";
 
-import * as data from '../../data/links.json';
-const linksString = JSON.stringify(data);
-const links = JSON.parse(linksString).links;
-
-type Link = {
-  title: string;
-  path: string;
-};
-
-type LinksProps = {
-  links: Link[];
-};
-
-const Links: React.FC<LinksProps> = ({ links }) => {
+const Header = () => {
   return (
-    <>
-      {links.map((link: Link) => {
-        return (
-          <Menu key={link.path}>
-            <MenuItems to={link.path}>
-              <MenuLinks>{link.title}</MenuLinks>
-            </MenuItems>
-          </Menu>
-        )
-      })}
-    </>
-  )
-};
-
-export const Header = () => {
-  return (
-    <Container>
-      <Links links={links} />
-    </Container>
+    <Nav>
+      <Logo>
+        <span><BsCodeSlash /></span><>Portfolio</>
+      </Logo>
+      <Button><BsDownload /> Baixar Curriculo</Button>
+    </Nav>
   );
-}
+};
+
+export default Header;

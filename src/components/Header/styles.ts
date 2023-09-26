@@ -1,33 +1,34 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.nav`
+export const Nav = styled.div`
   padding: 16px;
   display: flex;
   align-itens: center;
+  justify-content: space-between;
+`;
+
+export const Logo = styled.div`
+  display: flex;
+  align-itens: center;
   justify-content: center;
-  gap: 32px;
-  background-color: #212123;
-  box-shadow: 0 14px 10px -10px rgba(0,0,0,0.35);
+  gap: 12px;
 `;
 
-export const Menu = styled.li`
-  margin: 0 5px;
-  list-style: none;
-`;
-
-export const MenuItems = styled(Link)`
+export const Button = styled.button`
+  width: 200px;
+  height: 36px;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  justify-content: space-evenly;
+  font-size: 16px;
   font-weight: bold;
-  color: #f2f0e5;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #fffefd;
+  box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.35);
 
   &:hover {
-    color: #f87b1b;
+    background-color: #f87b1b;
   }
-`;
-
-export const MenuLinks = styled.span`
-  padding: 0 5px;
 `;

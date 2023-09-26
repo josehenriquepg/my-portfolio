@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Main = styled.main`
+  margin: 125px; 
+  color: #fffefd; 
   display: flex;
-  align-itens: center;
-  color: #fffefd;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
@@ -14,11 +17,6 @@ export const Title = styled.h1`
   text-align: left;
   color: #f87b1b;
   filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.35));
-`;
-
-export const Main = styled.main`
-  display: grid;
-  place-items: center;
 `;
 
 export const CardsContainer = styled.section`
