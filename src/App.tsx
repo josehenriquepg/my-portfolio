@@ -1,11 +1,13 @@
-import Home from './pages/Home';
-
+import { Container } from "./App.styles";
+import MainContent from "./components/MainContent";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <Container>
+      <Sidebar />
+      <MainContent />
+    </Container>
   );
 }
 

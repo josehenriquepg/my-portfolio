@@ -1,39 +1,37 @@
 import styled from 'styled-components';
 
-export const Main = styled.main`
+export const Container = styled.section`
   display: flex;
-  color: #fffefd;
   flex-direction: column;
+  color: #fffefd;
 `;
 
 export const Title = styled.h1`
-  margin: 0;
-  font-size: 42px;
+  font-size: 32px;
   text-align: center;
   color: #f87b1b;
   filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.35));
 `;
 
-export const Subtitle = styled.h2`
-  text-align: center;
+export const TechGrid = styled.div`
+  display: flex
+  flex-wrap: wrap
+  gap: 24px;
 `;
 
-export const Contacts = styled.div`
-  display: flex;
+export const TechCard = styled.div`
+  display: flex
   justify-content: center;
   align-items: center;
-  gap: 32px;
-`;
-
-export const SocialMedia = styled.a`
-  font-size: 32px;
-  text-decoration: none;
-  color: #fffefd;
+  width: 45%;
+  gap: 16px;
+  color: #f2f0e5;
   filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.35));
+  cursor: pointer;
 
   &:hover {
     color: #f87b1b;
   }
 `;
 
-
+export const TechName = styled.h3``;
