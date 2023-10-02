@@ -1,24 +1,30 @@
-import { Container, Title, TechCard, TechGrid, TechName } from './styles';
-import { SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiPython, SiRuby, SiRubyonrails, SiPostgresql } from 'react-icons/si';
-
+import { Container, TechCard, TechGrid, TechName, Subtitle } from "./styles";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNodedotjs,
+  SiPython,
+  SiPostgresql,
+  SiFlask,
+  SiMysql,
+} from "react-icons/si";
 
 const technologies = [
-  { "id": "js", "name": "Javascript", "icon": <SiJavascript /> },
-  { "id": "ts", "name": "Typescript", "icon": <SiTypescript /> },
-  { "id": "react", "name": "React.js", "icon": <SiReact /> },
-  { "id": "node", "name": "Node.js", "icon": <SiNodedotjs /> },
-  { "id": "python", "name": "Python", "icon": <SiPython /> },
-  { "id": "ruby", "name": "Ruby", "icon": <SiRuby /> },
-  { "id": "ror", "name": "Ruby on Rails", "icon": <SiRubyonrails /> },
-  { "id": "psql", "name": "PostgreSQL", "icon": <SiPostgresql /> }
+  { id: "js", name: "Javascript", icon: <SiJavascript className="icon" /> },
+  { id: "ts", name: "Typescript", icon: <SiTypescript className="icon" /> },
+  { id: "react", name: "React.js", icon: <SiReact className="icon" /> },
+  { id: "node", name: "Node.js", icon: <SiNodedotjs className="icon" /> },
+  { id: "python", name: "Python", icon: <SiPython className="icon" /> },
+  { id: "flask", name: "Flask", icon: <SiFlask className="icon" /> },
+  { id: "mysql", name: "MySQL", icon: <SiMysql className="icon" /> },
+  { id: "psql", name: "PostgreSQL", icon: <SiPostgresql className="icon" /> },
 ];
 
 const Technologies = () => {
   return (
     <Container>
-      <Title>
-        Tecnologias que uso:
-      </Title>
+      <Subtitle>Tecnologias</Subtitle>
       <TechGrid>
         {technologies.map((tech) => (
           <TechCard id={tech.id} key={tech.id}>
@@ -29,6 +35,6 @@ const Technologies = () => {
       </TechGrid>
     </Container>
   );
-}
+};
 
 export default Technologies;

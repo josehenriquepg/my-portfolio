@@ -1,16 +1,24 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Container = styled.div`
-  margin: 15px;
+export const Container = styled.section`
+  display: flex;
+  padding: 16px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 16px;
 `;
 
-export const Article = styled.article`
-  flex: 1 1 300px;
+export const CardContent = styled.div`
   padding: 16px;
-  max-width: 356px;
-  border-radius: 16px;
-  box-shadow: 4px 4px 2px rgba(0,0,0,0.35);
-  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 43%;
+  gap: 16px;
+  color: #f2f0e5;
+  border: 1px solid #333;
+  cursor: pointer;
 `;
 
 export const ProjectImage = styled.img`

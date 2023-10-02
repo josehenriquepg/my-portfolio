@@ -50,6 +50,7 @@ export const InfoCard = styled.div`
   gap: 16px;
   border-bottom: 1px solid #444;
   width: 100%;
+  
   .icon{
     width: 32px;
     height: 32px;
