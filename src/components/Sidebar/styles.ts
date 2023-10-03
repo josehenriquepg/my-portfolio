@@ -7,6 +7,11 @@ export const Container = styled.aside`
   align-items: center;
   text-align: center;
   position: relative;
+  background: rgba(20, 35, 58, 0.79);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 `;
 
 export const Image = styled.img``;

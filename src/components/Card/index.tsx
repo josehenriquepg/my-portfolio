@@ -1,10 +1,10 @@
 import {
   Container,
   CardContent,
-  ProjectImage,
+  Image,
   Description,
-  ProjectTitle,
-  ProjectText,
+  Title,
+  Text,
 } from "./styles";
 
 type CardInterface = {
@@ -23,10 +23,10 @@ const Card: React.FC<ProjectProps> = ({ projects }) => {
       {projects.map((project: CardInterface) => {
         return (
           <CardContent>
-            {project.image && <ProjectImage src={project.image} />}
+            {project.image && <Image src={project.image} />}
             <Description>
-              <ProjectTitle>{project.title}</ProjectTitle>
-              <ProjectText>{project.body}</ProjectText>
+              <Title>{project.title}</Title>
+              <Text>{project.body}</Text>
             </Description>
           </CardContent>
         );

@@ -1,4 +1,4 @@
-import { Container, Subtitle } from "./styles";
+import { Container, Subtitle, Content } from "./styles";
 import Card from "../Card";
 
 import * as data from "../../data/projects.json";
@@ -9,7 +9,9 @@ const Projects = () => {
   return (
     <Container>
       <Subtitle>Meus Projetos</Subtitle>
-      <Card projects={projects} />
+      <Content>
+        <Card projects={projects} />
+      </Content>
     </Container>
   );
 };

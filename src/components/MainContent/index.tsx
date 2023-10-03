@@ -1,4 +1,4 @@
-import { Main } from "./styles";
+import { Main, Title, Content } from "./styles";
 import About from "../AboutContent";
 import Technologies from "../TechnologiesContent";
 import Projects from "../ProjectsContent";
@@ -6,11 +6,14 @@ import Projects from "../ProjectsContent";
 const MainContent = () => {
   return (
     <Main>
-      <About />
-      <Technologies />
-      <Projects />
+      <Title> Olá, sou o José Henrique. </Title>
+      <Content>
+        <About />
+        <Technologies />
+        <Projects />
+      </Content>
     </Main>
   );
-}
+};
 
 export default MainContent;
